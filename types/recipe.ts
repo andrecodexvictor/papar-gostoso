@@ -49,5 +49,6 @@ export interface Recipe {
   steps: Step[];
   tags: string[];
   illustrationId: string;
+  imageUrl?: string;
   featured?: boolean;
 }

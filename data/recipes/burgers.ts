@@ -49,10 +49,12 @@ export const BURGER_RECIPES: Recipe[] = [
     caloriesApprox: 480,
     beagleTip: 'Dica da Nika: o hambúrguer japonês tradicional (Hambagu) não leva pão de lanche! Ele é servido no prato regado com molho espesso demi-glace e arroz gohan fofinho.',
     illustrationId: 'burger_japanese',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulhLESOohHYlw4iAPVUPVrcOOJ8Cbi.png',
     featured: true,
-    tags: ['Japonesa', 'Hambagu', 'Carne', 'Sem Pão', 'Prato Feito'],
+    tags: ['Japonesa', 'Hambagu', 'Carne', 'Queijo', 'Sem Pão', 'Prato Feito'],
     ingredients: [
       { item: 'Carne bovina moída', amount: 250, unit: 'g', tag: 'carne' },
+      { item: 'Queijo muçarela ou prato para o recheio', amount: 4, unit: 'fatias', tag: 'queijo' },
       { item: 'Carne suína moída', amount: 100, unit: 'g', tag: 'carne' },
       { item: 'Cebola picadinha e refogada', amount: 0.5, unit: 'unidade' },
       { item: 'Farinha panko hidratada em 2 colheres de leite', amount: 3, unit: 'colheres de sopa', tag: 'pao' },
@@ -63,7 +65,7 @@ export const BURGER_RECIPES: Recipe[] = [
     ],
     steps: [
       { order: 1, instruction: 'Misture as carnes, cebola refogada fria, panko hidratado, ovo batido, sal e noz-moscada até ficar homogêneo.', title: 'Misturar' },
-      { order: 2, instruction: 'Modele dois hambúrgueres ovais e faça uma leve cova no centro com o polegar.', title: 'Modelar' },
+      { order: 2, instruction: 'Divida a carne em quatro porções, coloque uma fatia de queijo no centro de duas delas, cubra com as outras porções e feche bem as bordas. Modele dois hambúrgueres ovais.', title: 'Rechear e modelar' },
       { order: 3, instruction: 'Doure os dois lados em fogo médio, pingue 3 colheres de água e tampe para cozinhar no vapor.', title: 'Cozinhar no vapor', timerSeconds: 300 },
       { order: 4, instruction: 'Na mesma frigideira, reduza o shoyu, ketchup e molho inglês até virar um molho brilhante.', title: 'Molho glaceado', timerSeconds: 120 },
       { order: 5, instruction: 'Sirva no prato com o molho por cima, acompanhado de arroz gohan e repolho crocante.', title: 'Servir' },

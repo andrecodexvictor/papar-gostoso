@@ -1,0 +1,23 @@
+PAPÁ GOSTOSO — FOTOGRAFIAS DAS RECEITAS
+
+As imagens estão em imagens/ em formato JPG, com o mesmo nome das receitas.
+Use creditos_imagens.csv para consultar a página original, o autor e a licença.
+Ao publicar, credite cada autor, linke a fonte e a licença e indique que o arquivo foi convertido/redimensionado para JPG quando a licença assim exigir.
+Se o campo autor estiver vazio, consulte a página da foto antes de publicar: a página original pode não identificar o fotógrafo.
+Confira a foto de cada receita antes de inserir no site. A busca foi assistida por computador e houve revisão visual em contato.
+
+FOTOGRAFIAS APROXIMADAS (PRATO OU INGREDIENTES PODEM DIFERIR):
+- Arroz de forno cremoso
+- Tapioca com queijo coalho tostado e coco
+- Brigadeiro de colher
+- Crepioca recheada com queijo e orégano
+- Doce de leite com banana grelhada
+- Mousse de limão refrescante
+- Gelatina de morango com frutas frescas
+- Cocada cremosa de colher
+- Ravioli de ricota e espinafre na manteiga de sálvia
+- Onigiri recheado com atum e maionese
+- Picadinho de carne com banana frita
+- Penne ao molho rosé com bacon
+
+PENDENTES: veja pendentes.txt; se estiver vazio, o pacote contém 112 fotos.
