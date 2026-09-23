@@ -1,0 +1,6 @@
+{
+  "name": "Papá Gostoso - Receitas & Culinária Acolhedora",
+  "description": "O portal acolhedor de receitas artesanais e tutoriais práticos da Nika, com o mascote Beagle na Moeda Dourada, receitas clássicas brasileiras, italianas, francesas, japonesas, hambúrgueres e sobremesas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
