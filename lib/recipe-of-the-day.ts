@@ -7,7 +7,7 @@ import { Recipe } from '@/types/recipe';
  * Leave as `null` to enable automatic dynamic daily rotation based on the calendar day.
  * Example: 'carbonara-classica' | 'burger-japones-hambagu' | 'brownie-chocolatudo'
  */
-export const MANUAL_RECIPE_OF_THE_DAY_ID: string | null = null;
+export const MANUAL_RECIPE_OF_THE_DAY_ID: string | null = 'feijoada-de-panela';
 
 // Curated list of standout recipes for the daily spotlight rotation
 const SPOTLIGHT_RECIPE_IDS: string[] = [
