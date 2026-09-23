@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Recipe } from '@/types/recipe';
-import DishIllustration from './DishIllustration';
 import BeagleChefEmblem from '@/components/mascot/BeagleChefEmblem';
 import { Clock, Heart, Sparkles, ArrowRight } from 'lucide-react';
 
@@ -40,12 +39,13 @@ export default function RecipeCard({
       onClick={() => onSelect(recipe)}
       className="group relative flex flex-col bg-[#FCFAF7] hover:bg-white rounded-3xl border border-[#EBE3D7] hover:border-[#D6C7B2] shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden text-left"
     >
-      {/* Top Media: Bespoke Detailed SVG Illustration */}
+        {/* Foto real da receita */}
       <div className="relative w-full aspect-4/3 overflow-hidden bg-[#F5EFE6]/60 border-b border-[#EFE8DC]">
-        <DishIllustration
-          id={recipe.illustrationId}
-          type={recipe.type}
-          className="w-full h-full p-4 transition-transform duration-500 group-hover:scale-105"
+        <img
+          src={`/imagens/${encodeURIComponent(recipe.title)}.jpg`}
+          alt={recipe.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
 
         {/* Favorite Heart Button */}
