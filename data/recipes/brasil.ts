@@ -46,6 +46,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     caloriesApprox: 680,
     beagleTip: 'Dica da Nika: amasse uma concha de feijão cozido contra a lateral da panela e devolva ao caldo no finalzinho; o caldo engrossa naturalmente sem precisar de farinha!',
     illustrationId: 'brasil_feijoada',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fp88WPfy1UUxCecaSRUmGEqevilbV1.png',
     featured: true,
     tags: ['Feijoada', 'Brasil', 'Feijão', 'Carnes', 'Tradição'],
     ingredients: [

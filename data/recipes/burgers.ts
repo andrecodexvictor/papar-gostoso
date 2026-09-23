@@ -15,6 +15,7 @@ export const BURGER_RECIPES: Recipe[] = [
     caloriesApprox: 520,
     beagleTip: 'Dica de ouro da Nika: passe manteiga no pão comprado e toste bem na frigideira quente antes de montar; cria uma película dourada que não deixa o molho amolecer o miolo!',
     illustrationId: 'burger_classic',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SZsGtmFCq0ekDQhOnGAiLqX2qhLSSi.png',
     featured: true,
     tags: ['Pão Comprado', 'Carne', 'Rápido', 'Frigideira'],
     ingredients: [
