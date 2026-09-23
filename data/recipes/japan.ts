@@ -47,7 +47,7 @@ export const JAPAN_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 180,
     beagleTip: 'Dica da Nika: use bastante amido de milho nas mãos e na bancada para a massa de arroz não grudar nos dedos na hora de fechar o morango!',
-    illustrationId: 'dessert_pudding',
+    illustrationId: 'japan_mochi',
     featured: true,
     tags: ['Mochi', 'Morango', 'Japão', 'Sobremesa', 'Arroz'],
     ingredients: [
@@ -165,7 +165,7 @@ export const JAPAN_RECIPES: Recipe[] = [
     servings: 3,
     caloriesApprox: 420,
     beagleTip: 'Dica da Nika: use amido de milho ou fécula de batata para empanar em vez de farinha de trigo; é isso que dá a casquinha crocante que não murcha nunca!',
-    illustrationId: 'burger_chicken',
+    illustrationId: 'japan_karaage',
     tags: ['Karaage', 'Frango', 'Japão', 'Crocante', 'Petisco'],
     ingredients: [
       { item: 'Sobrecoxas de frango desossadas cortadas em pedaços', amount: 450, unit: 'g', tag: 'frango' },
@@ -222,7 +222,7 @@ export const JAPAN_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 320,
     beagleTip: 'Dica da Nika: doure os fundos dos gyozas em óleo de gergelim e jogue 50ml de água na frigideira tampando imediatamente; o vapor cozinha a massa e a carne em 4 minutos!',
-    illustrationId: 'japan_poke',
+    illustrationId: 'japan_gyoza',
     tags: ['Gyoza', 'Japão', 'Frigideira', 'Vapor'],
     ingredients: [
       { item: 'Discos de massa para gyoza', amount: 16, unit: 'unidades', tag: 'massa' },

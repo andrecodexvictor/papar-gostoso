@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     title: 'Papá Gostoso · Receitas Acolhedoras & Tutoriais com Beagle',
     description: 'O portal acolhedor de receitas artesanais e tutoriais práticos da Nika, com o mascote Beagle na Moeda Dourada, receitas clássicas brasileiras, italianas, francesas, japonesas, hambúrgueres e sobremesas.',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

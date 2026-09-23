@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="appCoinEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2" />
+      <stop offset="25%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="75%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <linearGradient id="appCoinFace" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="40%" stop-color="#FDE68A" />
+      <stop offset="70%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <radialGradient id="appCoinGlow" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#FCD34D" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#92400E" stop-opacity="0.7" />
+    </radialGradient>
+
+    <linearGradient id="appBeagleEar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#854D0E" />
+      <stop offset="40%" stop-color="#A16207" />
+      <stop offset="100%" stop-color="#582900" />
+    </linearGradient>
+
+    <linearGradient id="appBeagleFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CA8A04" />
+      <stop offset="60%" stop-color="#A16207" />
+      <stop offset="100%" stop-color="#713F12" />
+    </linearGradient>
+
+    <filter id="appDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#451A03" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Outer Golden Coin Rim -->
+  <circle cx="100" cy="100" r="96" fill="url(#appCoinEdge)" />
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#78350F" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6" />
+  <circle cx="100" cy="100" r="88" fill="url(#appCoinFace)" />
+  <circle cx="100" cy="100" r="88" fill="url(#appCoinGlow)" />
+
+  <!-- Inner Pedestal -->
+  <circle cx="100" cy="100" r="74" fill="#FFFBEB" stroke="#B45309" stroke-width="2.5" />
+
+  <!-- Beagle Mascot in Coin -->
+  <g filter="url(#appDropShadow)">
+    <!-- Left Floppy Ear -->
+    <path d="M58 84 C48 94 40 114 43 134 C45 146 54 150 63 144 C72 136 76 112 73 95 Z" fill="url(#appBeagleEar)" />
+    <!-- Right Floppy Ear -->
+    <path d="M142 84 C152 94 160 114 157 134 C155 146 146 150 137 144 C128 136 124 112 127 95 Z" fill="url(#appBeagleEar)" />
+
+    <!-- Beagle Head -->
+    <ellipse cx="100" cy="100" rx="42" ry="38" fill="url(#appBeagleFur)" />
+
+    <!-- White Snout & Blaze -->
+    <path d="M93 72 C93 72 97 70 100 70 C103 70 107 72 107 72 C104 82 103 91 107 98 C113 100 125 106 125 118 C125 131 113 137 100 137 C87 137 75 131 75 118 C75 106 87 100 93 98 C97 91 96 82 93 72 Z" fill="#FFFFFF" />
+
+    <!-- Pink Cheeks -->
+    <circle cx="80" cy="116" r="6" fill="#FDA4AF" opacity="0.6" />
+    <circle cx="120" cy="116" r="6" fill="#FDA4AF" opacity="0.6" />
+
+    <!-- Beagle Big Eyes with Highlights -->
+    <circle cx="86" cy="96" r="7.5" fill="#1F2937" />
+    <circle cx="84" cy="94" r="2.8" fill="#FFFFFF" />
+    <circle cx="88" cy="98" r="1.2" fill="#FFFFFF" />
+
+    <circle cx="114" cy="96" r="7.5" fill="#1F2937" />
+    <circle cx="112" cy="94" r="2.8" fill="#FFFFFF" />
+    <circle cx="116" cy="98" r="1.2" fill="#FFFFFF" />
+
+    <!-- Eyebrows -->
+    <ellipse cx="85" cy="86" rx="3.5" ry="2" fill="#CA8A04" />
+    <ellipse cx="115" cy="86" rx="3.5" ry="2" fill="#CA8A04" />
+
+    <!-- Black Nose -->
+    <path d="M93 110 C93 107 100 106 100 106 C100 106 107 107 107 110 C107 115 104 117 100 117 C96 117 93 115 93 110 Z" fill="#18181B" />
+    <ellipse cx="98" cy="109" rx="2" ry="1.2" fill="#9CA3AF" />
+
+    <!-- Snout & Happy Mouth with Tongue -->
+    <path d="M100 117 L100 123" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
+    <path d="M91 122 Q100 128 109 122" stroke="#18181B" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M97 124 Q100 130 103 124 Z" fill="#F43F5E" stroke="#9F1239" stroke-width="0.8" />
+
+    <!-- White Chef Hat with Gold Band -->
+    <g transform="translate(0, -6)">
+      <path d="M83 62 C78 52 86 42 96 46 C100 40 112 40 115 48 C124 45 130 55 125 64 Z" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+      <path d="M86 63 L122 63 L120 69 L88 69 Z" fill="#FEF3C7" stroke="#D97706" stroke-width="1" />
+      <circle cx="104" cy="66" r="1.5" fill="#B45309" />
+    </g>
+
+    <!-- Red Chef Scarf -->
+    <path d="M86 136 Q100 144 114 136 L108 147 Q100 151 92 147 Z" fill="#DC2626" stroke="#991B1B" stroke-width="1.2" />
+    <circle cx="100" cy="142" r="2" fill="#FBBF24" />
+
+    <!-- Cute White Paw resting on coin rim -->
+    <ellipse cx="100" cy="154" rx="14" ry="9" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <circle cx="94" cy="152" r="2.5" fill="#FDA4AF" opacity="0.8" />
+    <circle cx="100" cy="150" r="2.5" fill="#FDA4AF" opacity="0.8" />
+    <circle cx="106" cy="152" r="2.5" fill="#FDA4AF" opacity="0.8" />
+  </g>
+
+  <!-- Golden Coin Sparkle Reflection -->
+  <path d="M148 38 L152 46 L160 49 L152 52 L148 60 L144 52 L136 49 L144 46 Z" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="148" cy="49" r="2" fill="#FEF08A" />
+</svg>

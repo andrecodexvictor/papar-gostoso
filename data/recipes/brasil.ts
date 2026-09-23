@@ -14,7 +14,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 2,
     caloriesApprox: 240,
     beagleTip: 'Dica de ouro da Nika: hidrate o flocão de milho com água e sal e deixe descansar por 10 minutos antes de ir para a cuscuzeira. Ele incha e fica incrivelmente macio e soltinho!',
-    illustrationId: 'salad_potato',
+    illustrationId: 'brasil_cuscuz',
     featured: true,
     tags: ['Cuscuz', 'Nordeste', 'Brasil', 'Café da Manhã', 'Milho'],
     ingredients: [
@@ -45,7 +45,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 8,
     caloriesApprox: 680,
     beagleTip: 'Dica da Nika: amasse uma concha de feijão cozido contra a lateral da panela e devolva ao caldo no finalzinho; o caldo engrossa naturalmente sem precisar de farinha!',
-    illustrationId: 'lunch_ribs',
+    illustrationId: 'brasil_feijoada',
     featured: true,
     tags: ['Feijoada', 'Brasil', 'Feijão', 'Carnes', 'Tradição'],
     ingredients: [
@@ -78,7 +78,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 420,
     beagleTip: 'Dica da Nika: monte os peixes e vegetais em camadas na panela de barro ou ferro e tampe sem mexer com colher; apenas balance a panela de vez em quando para o peixe não desmanchar!',
-    illustrationId: 'japan_poke',
+    illustrationId: 'brasil_moqueca',
     tags: ['Moqueca', 'Peixe', 'Brasil', 'Dendê', 'Coco'],
     ingredients: [
       { item: 'Postas de peixe firme (robalo, cação ou badejo)', amount: 700, unit: 'g' },
@@ -138,7 +138,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 6,
     caloriesApprox: 190,
     beagleTip: 'Dica da Nika: use polvilho azedo misturado com queijo minas padrão curado ou canastra ralado no ralo grosso para o pão crescer oco por dentro e crocante por fora!',
-    illustrationId: 'bread_rustic',
+    illustrationId: 'brasil_pao_de_queijo',
     featured: true,
     tags: ['Pão de Queijo', 'Minas', 'Brasil', 'Polvilho', 'Café'],
     ingredients: [
@@ -169,7 +169,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 320,
     beagleTip: 'Dica da Nika: coloque uma colher de sopa de cachaça na água da massa do pastel; ela evapora na fritura e forma aquelas bolhas douradas e crocantes inconfundíveis!',
-    illustrationId: 'italy_pizza',
+    illustrationId: 'brasil_pastel',
     tags: ['Pastel', 'Feira', 'Crocante', 'Brasil'],
     ingredients: [
       { item: 'Farinha de trigo', amount: 300, unit: 'g' },
@@ -198,7 +198,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 6,
     caloriesApprox: 310,
     beagleTip: 'Dica da Nika: use o próprio caldo do cozimento do frango bem temperado para cozinhar a farinha de trigo da massa; a massa fica saborosa até na última mordida!',
-    illustrationId: 'burger_chicken',
+    illustrationId: 'brasil_coxinha',
     featured: true,
     tags: ['Coxinha', 'Frango', 'Salgadinho', 'Festa', 'Brasil'],
     ingredients: [
@@ -229,7 +229,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 8,
     caloriesApprox: 340,
     beagleTip: 'Dica da Nika: não exagere nas cenouras! Use cenouras médias; cenoura demais pesa a massa e não deixa o bolo crescer fofo. Para a calda craquelar, ferva açúcar, manteiga e chocolate até ponto de bala mole.',
-    illustrationId: 'dessert_sponge_cake',
+    illustrationId: 'brasil_bolo_cenoura',
     featured: true,
     tags: ['Bolo', 'Cenoura', 'Chocolate', 'Café da Tarde', 'Brasil'],
     ingredients: [
@@ -378,7 +378,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 210,
     beagleTip: 'Dica da Nika: coloque o queijo coalho direto na frigideira antes da goma de tapioca; ele doura e fica com uma crostinha caramelizada fantástica grudada na massa!',
-    illustrationId: 'breakfast_toast',
+    illustrationId: 'brasil_tapioca',
     tags: ['Tapioca', 'Café', 'Brasil', 'Nordeste', 'Rápido'],
     ingredients: [
       { item: 'Goma de tapioca hidratada e peneirada', amount: 4, unit: 'colheres de sopa' },
@@ -405,7 +405,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 280,
     beagleTip: 'Dica da Nika: desligue o fogo um pouquinho antes do ponto de enrolar e acrescente 2 colheres de creme de leite no final; fica aveludado e nunca açucara!',
-    illustrationId: 'dessert_brownie',
+    illustrationId: 'brasil_brigadeiro',
     featured: true,
     tags: ['Brigadeiro', 'Chocolate', 'Doce', 'Brasil', 'Festa'],
     ingredients: [

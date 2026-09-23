@@ -3,6 +3,7 @@
 import React from 'react';
 import { Recipe } from '@/types/recipe';
 import DishIllustration from './DishIllustration';
+import BeagleChefEmblem from '@/components/mascot/BeagleChefEmblem';
 import { Clock, Heart, Sparkles, ArrowRight } from 'lucide-react';
 
 interface RecipeCardProps {
@@ -72,6 +73,11 @@ export default function RecipeCard({
             <span>Destaque</span>
           </div>
         )}
+
+        {/* Beagle Chef Approved Seal */}
+        <div className="absolute bottom-2.5 right-2.5 z-10 pointer-events-none">
+          <BeagleChefEmblem size="xs" />
+        </div>
       </div>
 
       {/* Card Content & Zero-Pill Cozy Typography */}

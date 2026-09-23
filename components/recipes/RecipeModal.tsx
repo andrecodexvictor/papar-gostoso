@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Recipe } from '@/types/recipe';
 import DishIllustration from './DishIllustration';
 import BeagleCoin from '../mascot/BeagleCoin';
+import BeagleChefEmblem from '../mascot/BeagleChefEmblem';
 import {
   X,
   Clock,
@@ -123,6 +124,9 @@ export default function RecipeModal({
             </div>
 
             <div className="md:col-span-7 space-y-3">
+              <div className="flex items-center gap-2">
+                <BeagleChefEmblem size="sm" />
+              </div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 leading-tight">
                 {recipe.title}
               </h2>
