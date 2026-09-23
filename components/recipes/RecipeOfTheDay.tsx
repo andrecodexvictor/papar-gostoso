@@ -152,6 +152,7 @@ export default function RecipeOfTheDay({
               <DishIllustration
                 id={recipe.illustrationId}
                 type={recipe.type}
+                imageUrl={recipe.imageUrl}
                 className="w-full h-full p-4 transition-transform duration-500 group-hover:scale-105"
               />
 

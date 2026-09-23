@@ -42,6 +42,7 @@ interface DishIllustrationProps {
   id: string;
   type?: DishType | 'drink' | string;
   className?: string;
+  imageUrl?: string;
 }
 
 /**
@@ -59,6 +60,7 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
   id,
   type = 'salgado',
   className = '',
+  imageUrl,
 }) => {
   const renderDishContent = () => {
     switch (id) {
@@ -172,6 +174,17 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
         return <BurgerClassicIllustration />;
     }
   };
+
+  if (imageUrl) {
+    return (
+      <img
+        src={imageUrl}
+        alt="Fotografia do prato"
+        className={`${className} object-cover`}
+        loading="lazy"
+      />
+    );
+  }
 
   return (
     <svg

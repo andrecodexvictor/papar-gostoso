@@ -116,7 +116,7 @@ export default function RecipeModal({
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div className="md:col-span-5 aspect-4/3 rounded-2xl overflow-hidden shadow-inner border border-stone-200/80 bg-stone-100">
               <img
-                src={`/imagens/${encodeURIComponent(recipe.title)}.jpg`}
+                src={recipe.imageUrl ?? `/imagens/${encodeURIComponent(recipe.title)}.jpg`}
                 alt={recipe.title}
                 className="w-full h-full object-cover"
               />
