@@ -668,3 +668,180 @@ export function BrasilBoloCenouraIllustration() {
     </g>
   );
 }
+
+export function BrasilMoquecaIllustration() {
+  return (
+    <g id="brasil-moqueca-de-peixe" filter="url(#dropShadowFilter)">
+      {/* Table shadow */}
+      <ellipse cx="400" cy="700" rx="330" ry="55" fill="url(#tableOcclusionShadow)" />
+
+      {/* Traditional Black Clay Pot (Panela de Barro Preta Tradicional de Moqueca) */}
+      <ellipse cx="400" cy="510" rx="320" ry="220" fill="#1C1917" stroke="#0C0A09" strokeWidth="8" />
+      {/* Pot side handles */}
+      <path d="M70 510 C60 480 90 460 110 475" stroke="#1C1917" strokeWidth="18" strokeLinecap="round" fill="none" />
+      <path d="M730 510 C740 480 710 460 690 475" stroke="#1C1917" strokeWidth="18" strokeLinecap="round" fill="none" />
+      <ellipse cx="400" cy="480" rx="280" ry="170" fill="#292524" />
+
+      {/* Simmering Golden-Orange Dendê & Coconut Milk Stew (Caldo de Dendê e Leite de Coco Fervente) */}
+      <ellipse cx="400" cy="480" rx="260" ry="155" fill="url(#moquecaBrothGrad)" />
+
+      {/* Tender White Fish Fillets (Postas de Peixe Branco Suculentas) */}
+      <g id="fish-steaks">
+        <ellipse cx="320" cy="460" rx="65" ry="38" transform="rotate(-15 320 460)" fill="url(#fishMeatGrad)" />
+        <ellipse cx="480" cy="470" rx="70" ry="40" transform="rotate(15 480 470)" fill="url(#fishMeatGrad)" />
+        <ellipse cx="400" cy="530" rx="60" ry="35" fill="url(#fishMeatGrad)" />
+      </g>
+
+      {/* Bell Pepper Rings (Pimentão Vermelho, Amarelo e Verde em Rodelas) */}
+      <g fill="none" strokeWidth="9" opacity="0.95">
+        {/* Red pepper rings */}
+        <ellipse cx="330" cy="430" rx="42" ry="24" stroke="#DC2626" transform="rotate(20 330 430)" />
+        <ellipse cx="470" cy="520" rx="38" ry="22" stroke="#DC2626" transform="rotate(-15 470 520)" />
+        {/* Yellow pepper rings */}
+        <ellipse cx="450" cy="440" rx="40" ry="22" stroke="#EAB308" transform="rotate(-25 450 440)" />
+        <ellipse cx="280" cy="510" rx="36" ry="20" stroke="#EAB308" transform="rotate(15 280 510)" />
+        {/* Green pepper rings */}
+        <ellipse cx="390" cy="470" rx="38" ry="22" stroke="#16A34A" transform="rotate(5 390 470)" />
+      </g>
+
+      {/* Sliced Ripe Tomato Rings */}
+      <g fill="url(#ratatouilleTomatoGrad)">
+        <ellipse cx="250" cy="450" rx="32" ry="20" transform="rotate(-30 250 450)" />
+        <ellipse cx="530" cy="460" rx="32" ry="20" transform="rotate(30 530 460)" />
+        <ellipse cx="380" cy="400" rx="34" ry="20" transform="rotate(10 380 400)" />
+      </g>
+
+      {/* Fresh Cilantro / Coentro Leaves */}
+      <g fill="#15803D">
+        <path d="M370 450 Q350 430 360 415 Q375 425 370 450 Z" />
+        <path d="M430 460 Q450 440 440 425 Q425 435 430 460 Z" />
+        <path d="M400 500 Q410 475 395 480 Q390 495 400 500 Z" />
+        <circle cx="340" cy="480" r="3" />
+        <circle cx="460" cy="490" r="3" />
+      </g>
+
+      {/* Dendê Oil Glossy Red-Gold Liquid Sheen */}
+      <g fill="#FFFFFF" opacity="0.8">
+        <ellipse cx="330" cy="450" rx="14" ry="4" transform="rotate(-15 330 450)" />
+        <ellipse cx="475" cy="460" rx="16" ry="5" transform="rotate(15 475 460)" />
+        <circle cx="400" cy="430" r="4" />
+        <circle cx="370" cy="510" r="3.5" />
+      </g>
+    </g>
+  );
+}
+
+export function BrasilPastelIllustration() {
+  return (
+    <g id="brasil-pastel-de-feira" filter="url(#dropShadowFilter)">
+      {/* Table shadow */}
+      <ellipse cx="400" cy="690" rx="310" ry="50" fill="url(#tableOcclusionShadow)" />
+
+      {/* Pastel paper sleeve / wooden board */}
+      <ellipse cx="400" cy="610" rx="330" ry="170" fill="url(#plateCeramicGrad)" stroke="#E5E7EB" strokeWidth="4" />
+
+      {/* Two golden crisp fried pastéis (Pastel de Feira Crocante com Bolhas) */}
+      {/* Pastel 1 (Back / angled) */}
+      <g transform="translate(340, 480) rotate(-15)">
+        <ellipse cx="0" cy="10" rx="170" ry="100" fill="#1C1917" opacity="0.3" />
+        {/* Crisp rectangular pastry with puffed center */}
+        <rect x="-160" y="-80" width="320" height="160" rx="12" fill="url(#pastelDouradoGrad)" />
+        {/* Fork-crimped seal along edges (Bordas frisadas com garfo) */}
+        <path d="M-155 -75 L-155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M155 -75 L155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M-155 -75 L155 -75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M-155 75 L155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+
+        {/* Fried blistering bubbles on crust (Bolhas de fritura douradas) */}
+        <g fill="url(#pastelBubbleGrad)">
+          {[-80, -30, 20, 70, -60, 40, -10, 90].map((x, i) => (
+            <circle key={i} cx={x} cy={-40 + (i % 3) * 35} r={8 + (i % 4) * 3} opacity="0.9" />
+          ))}
+        </g>
+        {/* Bubble highlights */}
+        <g fill="#FFFFFF" opacity="0.8">
+          <circle cx="-32" cy="-42" r="3" />
+          <circle cx="18" cy="-8" r="3" />
+          <circle cx="-62" cy="28" r="2.5" />
+        </g>
+      </g>
+
+      {/* Pastel 2 (Front / prominent) */}
+      <g transform="translate(440, 520) rotate(12)">
+        <ellipse cx="0" cy="10" rx="170" ry="100" fill="#1C1917" opacity="0.35" />
+        <rect x="-160" y="-80" width="320" height="160" rx="12" fill="url(#pastelDouradoGrad)" />
+        {/* Fork crimping */}
+        <path d="M-155 -75 L-155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M155 -75 L155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M-155 -75 L155 -75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+        <path d="M-155 75 L155 75" stroke="#92400E" strokeWidth="4" strokeDasharray="3 4" />
+
+        {/* Golden crispy blistered bubbles */}
+        <g fill="url(#pastelBubbleGrad)">
+          {[-90, -40, 10, 60, 100, -70, -20, 40, 80].map((x, i) => (
+            <circle key={i} cx={x} cy={-35 + (i % 3) * 30} r={9 + (i % 3) * 4} opacity="0.9" />
+          ))}
+        </g>
+        {/* Blister specular highlights */}
+        <g fill="#FFFFFF" opacity="0.9">
+          <circle cx="-92" cy="-37" r="3" />
+          <circle cx="8" cy="-7" r="3.5" />
+          <circle cx="58" cy="22" r="3" />
+          <circle cx="-18" cy="23" r="2.5" />
+          <ellipse cx="0" cy="-20" rx="25" ry="6" opacity="0.6" />
+        </g>
+      </g>
+    </g>
+  );
+}
+
+export function BrasilTapiocaIllustration() {
+  return (
+    <g id="brasil-tapioca-queijo" filter="url(#dropShadowFilter)">
+      {/* Table shadow */}
+      <ellipse cx="400" cy="700" rx="310" ry="50" fill="url(#tableOcclusionShadow)" />
+
+      {/* Brazilian Handcrafted Terracotta Plate */}
+      <ellipse cx="400" cy="620" rx="330" ry="180" fill="url(#plateRimGrad)" />
+      <ellipse cx="400" cy="615" rx="305" ry="160" fill="url(#plateCeramicGrad)" />
+      <ellipse cx="400" cy="605" rx="270" ry="140" fill="url(#plateInnerShadow)" />
+
+      {/* Folded Half-Moon Tapioca Crepe (Tapioca Rendada Branca Dobrada ao Meio) */}
+      <g transform="translate(400, 520)">
+        {/* Drop shadow of tapioca */}
+        <path d="M-220 50 C-150 140 150 140 220 50 Z" fill="#1C1917" opacity="0.3" />
+
+        {/* Textured Snowy White Tapioca Shell */}
+        <path
+          d="M-220 30 C-220 -80 -100 -160 0 -160 C100 -160 220 -80 220 30 C180 75 90 95 0 95 C-90 95 -180 75 -220 30 Z"
+          fill="url(#tapiocaWhiteGrad)"
+        />
+
+        {/* Melty Grilled Queijo Coalho & Coconut peeking out from the folded mouth */}
+        <g id="coalho-filling">
+          <path
+            d="M-170 30 C-100 65 100 65 170 30 C130 55 50 65 0 65 C-50 65 -130 55 -170 30 Z"
+            fill="url(#queijoCoalhoGrad)"
+          />
+          {/* Melted cheese drips */}
+          <path d="M-50 50 C-45 75 -35 85 -30 75 C-25 60 -25 50 -20 50 Z" fill="#FEF08A" />
+          <path d="M30 52 C35 78 45 88 50 78 C55 62 55 52 60 52 Z" fill="#FEF08A" />
+          {/* Griddle grill marks on cheese */}
+          <path d="M-70 42 L-50 60 M0 45 L20 62 M70 42 L90 60" stroke="#78350F" strokeWidth="4" strokeLinecap="round" opacity="0.8" />
+        </g>
+
+        {/* Tapioca granular bead texture (Gomas de tapioca hidratadas granuladas) */}
+        <g fill="#FFFFFF" opacity="0.95">
+          {[-150, -100, -50, 0, 50, 100, 150, -120, -70, -20, 30, 80, 120].map((x, i) => (
+            <circle key={i} cx={x} cy={-100 + (i % 4) * 35} r={3 + (i % 3)} />
+          ))}
+        </g>
+
+        {/* Glistening melted butter brush on top surface */}
+        <path d="M-100 -60 Q0 -90 100 -60" stroke="#FEF08A" strokeWidth="12" strokeLinecap="round" opacity="0.6" fill="none" />
+        <ellipse cx="0" cy="-75" rx="35" ry="6" fill="#FFFFFF" opacity="0.85" />
+      </g>
+    </g>
+  );
+}
+

@@ -366,3 +366,257 @@ export function ItalyRisottoIllustration() {
     </g>
   );
 }
+
+export function PastaWhiteSauceIllustration() {
+  return (
+    <g id="pasta-molho-branco">
+      <ellipse cx="400" cy="710" rx="310" ry="50" fill="url(#tableOcclusionShadow)" />
+      <ellipse cx="400" cy="650" rx="300" ry="70" fill="url(#plateRimGrad)" />
+      <ellipse cx="400" cy="640" rx="275" ry="60" fill="url(#plateCeramicGrad)" />
+      <ellipse cx="400" cy="625" rx="220" ry="48" fill="url(#plateInnerShadow)" />
+
+      {/* Fettuccine / Penne in Velvety White Cream Sauce (Bechamel / Alfredo) */}
+      <g id="white-sauce-mound" transform="translate(400, 520)">
+        <ellipse cx="0" cy="70" rx="190" ry="35" fill="#1C1917" opacity="0.35" />
+        {/* Ivory cream bed */}
+        <ellipse cx="0" cy="20" rx="180" ry="65" fill="url(#whiteSauceGrad)" />
+
+        {/* Pasta ribbons coated in silky white sauce */}
+        <g stroke="url(#whiteSauceGrad)" strokeWidth="16" strokeLinecap="round" fill="none">
+          <path d="M-140 20 C-90 -30 -30 -10 20 -40 C70 -60 130 -30 160 10" />
+          <path d="M-130 -10 C-70 -60 10 -50 70 -80 C120 -70 140 -20 140 30" />
+          <path d="M-110 40 C-50 0 50 10 110 -30 C135 -10 135 30 115 50" />
+          <path d="M-150 0 C-100 50 -20 20 50 40 C100 20 135 50 145 10" />
+          <path d="M-80 -50 C-20 -85 60 -85 105 -35" />
+        </g>
+
+        {/* Liquid Cream & Butter Highlights */}
+        <g stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" opacity="0.9">
+          <path d="M-120 -10 C-70 -50 0 -40 60 -70" />
+          <path d="M-30 -75 C10 -95 50 -85 80 -50" />
+          <path d="M-90 35 C-40 2 40 10 90 -25" />
+        </g>
+
+        {/* Freshly grated nutmeg & cracked black pepper */}
+        <g fill="#27272A">
+          {[-110, -70, -30, 0, 40, 80, 120, -50, 60, -10].map((x, i) => (
+            <circle key={i} cx={x} cy={-40 + (i % 4) * 18} r="1.8" />
+          ))}
+        </g>
+
+        {/* Fresh Italian Flat-Leaf Parsley */}
+        <g fill="#15803D" opacity="0.9">
+          <ellipse cx="-40" cy="-20" rx="7" ry="4" transform="rotate(25 -40 -20)" />
+          <ellipse cx="25" cy="-55" rx="8" ry="4" transform="rotate(-30 25 -55)" />
+          <ellipse cx="70" cy="15" rx="7" ry="4" transform="rotate(15 70 15)" />
+          <ellipse cx="-90" cy="10" rx="6" ry="3.5" transform="rotate(-40 -90 10)" />
+        </g>
+      </g>
+    </g>
+  );
+}
+
+export function PastaChickenIllustration() {
+  return (
+    <g id="pasta-cremosa-frango">
+      <ellipse cx="400" cy="710" rx="310" ry="50" fill="url(#tableOcclusionShadow)" />
+      <ellipse cx="400" cy="650" rx="300" ry="70" fill="url(#plateRimGrad)" />
+      <ellipse cx="400" cy="640" rx="275" ry="60" fill="url(#plateCeramicGrad)" />
+      <ellipse cx="400" cy="625" rx="220" ry="48" fill="url(#plateInnerShadow)" />
+
+      <g id="chicken-pasta-mound" transform="translate(400, 520)">
+        <ellipse cx="0" cy="70" rx="190" ry="35" fill="#1C1917" opacity="0.35" />
+        <ellipse cx="0" cy="20" rx="180" ry="65" fill="url(#whiteSauceGrad)" />
+
+        {/* Creamy pasta coils */}
+        <g stroke="url(#whiteSauceGrad)" strokeWidth="15" strokeLinecap="round" fill="none">
+          <path d="M-130 20 C-80 -30 -20 -10 30 -40 C80 -60 130 -30 150 10" />
+          <path d="M-120 -10 C-60 -55 20 -45 80 -75 C120 -60 135 -15 130 30" />
+          <path d="M-100 40 C-40 0 60 10 110 -30" />
+        </g>
+
+        {/* Succulent Sliced Grilled Chicken Breast Strips (Tiras de Peito de Frango Grelhado Suculento) */}
+        <g id="grilled-chicken-slices">
+          {[
+            { x: -50, y: -25, rot: -15, w: 75, h: 32 },
+            { x: 30, y: -45, rot: 20, w: 80, h: 34 },
+            { x: -10, y: 15, rot: 5, w: 70, h: 30 },
+            { x: 60, y: 10, rot: -25, w: 70, h: 30 },
+            { x: -80, y: 20, rot: 35, w: 65, h: 28 },
+          ].map((c, i) => (
+            <g key={i} transform={`translate(${c.x}, ${c.y}) rotate(${c.rot})`}>
+              {/* Drop shadow */}
+              <ellipse cx="0" cy="4" rx={c.w / 2} ry={c.h / 2} fill="#1C1917" opacity="0.4" />
+              {/* Juicy chicken meat */}
+              <rect x={-c.w / 2} y={-c.h / 2} width={c.w} height={c.h} rx="8" fill="url(#chickenBreastGrad)" />
+              {/* Golden sear grill marks */}
+              <path
+                d={`M${-c.w / 3} ${-c.h / 2} L${-c.w / 4} ${c.h / 2} M0 ${-c.h / 2} L${c.w / 10} ${c.h / 2} M${c.w / 4} ${-c.h / 2} L${c.w / 3} ${c.h / 2}`}
+                stroke="#78350F"
+                strokeWidth="3.5"
+                strokeLinecap="round"
+                opacity="0.8"
+              />
+              {/* Glistening chicken juiciness highlight */}
+              <ellipse cx={-c.w / 4} cy={-c.h / 4} rx="8" ry="3" fill="#FFFFFF" opacity="0.8" />
+            </g>
+          ))}
+        </g>
+
+        {/* Herb flecks */}
+        <g fill="#16A34A">
+          <circle cx="-30" cy="-5" r="2" />
+          <circle cx="20" cy="-20" r="2" />
+          <circle cx="70" cy="-10" r="2" />
+          <circle cx="0" cy="35" r="2" />
+        </g>
+      </g>
+    </g>
+  );
+}
+
+export function PastaPestoIllustration() {
+  return (
+    <g id="pasta-pesto-genovese">
+      <ellipse cx="400" cy="710" rx="310" ry="50" fill="url(#tableOcclusionShadow)" />
+      <ellipse cx="400" cy="650" rx="300" ry="70" fill="url(#plateRimGrad)" />
+      <ellipse cx="400" cy="640" rx="275" ry="60" fill="url(#plateCeramicGrad)" />
+      <ellipse cx="400" cy="625" rx="220" ry="48" fill="url(#plateInnerShadow)" />
+
+      <g id="pesto-pasta-mound" transform="translate(400, 520)">
+        <ellipse cx="0" cy="70" rx="190" ry="35" fill="#1C1917" opacity="0.35" />
+        {/* Vibrant emerald Genovese pesto coated base */}
+        <ellipse cx="0" cy="20" rx="180" ry="65" fill="url(#pestoSauceGrad)" />
+
+        {/* Pesto-coated pasta ribbons */}
+        <g stroke="url(#pestoSauceGrad)" strokeWidth="13" strokeLinecap="round" fill="none">
+          <path d="M-140 20 C-90 -30 -30 -10 20 -40 C70 -60 130 -30 160 10" />
+          <path d="M-130 -10 C-70 -60 10 -50 70 -80 C120 -70 140 -20 140 30" />
+          <path d="M-110 40 C-50 0 50 10 110 -30 C135 -10 135 30 115 50" />
+          <path d="M-80 -50 C-20 -85 60 -85 105 -35" />
+        </g>
+
+        {/* Glossy Extra Virgin Olive Oil shine */}
+        <g stroke="#86EFAC" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.8">
+          <path d="M-120 -10 C-70 -50 0 -40 60 -70" />
+          <path d="M-30 -75 C10 -95 50 -85 80 -50" />
+        </g>
+        <circle cx="20" cy="-40" r="3.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="-50" cy="-10" r="3" fill="#FFFFFF" opacity="0.9" />
+
+        {/* Toasted Golden Pine Nuts (Pinoli Tostati) */}
+        <g fill="url(#pineNutGrad)">
+          {[-70, -20, 30, 80, -40, 50, 0].map((x, i) => (
+            <ellipse key={i} cx={x} cy={-30 + (i % 3) * 25} rx="8" ry="4" transform={`rotate(${i * 35} ${x} ${-30 + (i % 3) * 25})`} />
+          ))}
+        </g>
+
+        {/* Fresh Genovese Basil Leaves Crown */}
+        <g fill="url(#basilGrad)" filter="url(#sauceShine)">
+          <path d="M0 -70 C-30 -90 -20 -120 0 -130 C20 -120 30 -90 0 -70 Z" />
+          <path d="M-15 -80 C-45 -90 -55 -70 -40 -50 C-25 -60 -15 -80 -15 -80 Z" />
+          <path d="M15 -80 C45 -90 55 -70 40 -50 C25 -60 15 -80 15 -80 Z" />
+        </g>
+
+        {/* Shaved Parmigiano curls */}
+        <g fill="#FEFCE8">
+          <path d="M-60 -10 Q-30 -25 0 -15 Q-20 5 -60 -10 Z" opacity="0.9" />
+          <path d="M30 10 Q60 -5 85 15 Q55 25 30 10 Z" opacity="0.9" />
+        </g>
+      </g>
+    </g>
+  );
+}
+
+export function ItalyBruschettaIllustration() {
+  return (
+    <g id="italy-bruschetta-al-pomodoro" filter="url(#dropShadowFilter)">
+      {/* Rustic Italian Olive Wood Board */}
+      <ellipse cx="400" cy="500" rx="360" ry="240" fill="url(#cuttingBoardWoodGrad)" />
+      <ellipse cx="400" cy="495" rx="340" ry="225" fill="#3D1D09" opacity="0.3" />
+
+      {/* Bruschetta Slices: Two thick crusty grilled Italian bread slices mounded with ripe red diced tomatoes */}
+      {/* Slice 1 (Left / Back) */}
+      <g transform="translate(280, 440) rotate(-10)">
+        {/* Bread Base */}
+        <ellipse cx="0" cy="10" rx="130" ry="70" fill="url(#sourdoughCrustGrad)" />
+        <ellipse cx="0" cy="5" rx="115" ry="55" fill="url(#breadCrumbGrad)" />
+        {/* Charred grill marks */}
+        <path d="M-80 -20 L-40 40 M-30 -30 L10 30 M20 -30 L60 30" stroke="#451A03" strokeWidth="4" strokeLinecap="round" opacity="0.7" />
+
+        {/* Diced Glistening Ruby Tomatoes (Pomodori a Cubetti) */}
+        <g id="diced-tomatoes-1">
+          {[-60, -30, 0, 30, 60, -45, -15, 15, 45].map((x, i) => (
+            <rect
+              key={i}
+              x={x}
+              y={-25 + (i % 3) * 15}
+              width="24"
+              height="20"
+              rx="4"
+              transform={`rotate(${i * 25} ${x + 12} ${-15 + (i % 3) * 15})`}
+              fill="url(#ratatouilleTomatoGrad)"
+            />
+          ))}
+        </g>
+
+        {/* Olive oil sheen highlights */}
+        <g fill="#FFFFFF" opacity="0.8">
+          <circle cx="-20" cy="-10" r="3" />
+          <circle cx="25" cy="5" r="3" />
+          <circle cx="50" cy="-15" r="2.5" />
+        </g>
+
+        {/* Torn Fresh Basil Leaves */}
+        <g fill="#15803D">
+          <path d="M-10 -15 Q-30 -30 -15 -45 Q0 -35 -10 -15 Z" />
+          <path d="M20 5 Q40 -5 35 -20 Q15 -10 20 5 Z" />
+        </g>
+      </g>
+
+      {/* Slice 2 (Right / Front) */}
+      <g transform="translate(480, 480) rotate(15)">
+        <ellipse cx="0" cy="10" rx="130" ry="70" fill="url(#sourdoughCrustGrad)" />
+        <ellipse cx="0" cy="5" rx="115" ry="55" fill="url(#breadCrumbGrad)" />
+        <path d="M-70 -20 L-30 40 M-20 -30 L20 30 M30 -30 L70 30" stroke="#451A03" strokeWidth="4" strokeLinecap="round" opacity="0.7" />
+
+        <g id="diced-tomatoes-2">
+          {[-55, -25, 5, 35, 60, -40, -10, 20, 50].map((x, i) => (
+            <rect
+              key={i}
+              x={x}
+              y={-20 + (i % 3) * 15}
+              width="25"
+              height="22"
+              rx="4"
+              transform={`rotate(${i * -30} ${x + 12} ${-10 + (i % 3) * 15})`}
+              fill="url(#ratatouilleTomatoGrad)"
+            />
+          ))}
+        </g>
+
+        {/* Extra Virgin Olive Oil Glistening Sheen */}
+        <g fill="#FFFFFF" opacity="0.85">
+          <circle cx="-10" cy="-5" r="3.5" />
+          <circle cx="35" cy="-10" r="3" />
+          <circle cx="10" cy="15" r="3" />
+          <ellipse cx="-35" cy="5" rx="5" ry="2" />
+        </g>
+
+        {/* Fresh Torn Basil & Cracked Black Pepper */}
+        <g fill="#15803D">
+          <path d="M-5 -25 Q15 -45 5 -55 Q-15 -45 -5 -25 Z" />
+          <path d="M30 -5 Q50 -20 40 -35 Q20 -20 30 -5 Z" />
+          <ellipse cx="-30" cy="0" rx="10" ry="5" transform="rotate(-20 -30 0)" />
+        </g>
+        <g fill="#18181B">
+          <circle cx="0" cy="-10" r="1.5" />
+          <circle cx="20" cy="10" r="1.5" />
+          <circle cx="-25" cy="-15" r="1.5" />
+          <circle cx="45" cy="-5" r="1.5" />
+        </g>
+      </g>
+    </g>
+  );
+}
+

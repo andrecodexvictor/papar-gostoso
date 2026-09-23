@@ -14,7 +14,7 @@ export const DRINK_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 120,
     beagleTip: 'Dica de ouro da Nika: congele sobras de café coado em forminhas de gelo; ao usar pedras de gelo de café, sua bebida gelada não fica aguada conforme o gelo derrete!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_iced_coffee',
     featured: true,
     tags: ['Café Gelado', 'Bebida', 'Verão', 'Refrescante', 'Rápido'],
     ingredients: [
@@ -43,7 +43,7 @@ export const DRINK_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 140,
     beagleTip: 'Dica da Nika: agite o leite quente dentro de um pote de vidro com tampa por 30 segundos antes de despejar; cria uma espuma densa de cafeteria sem máquina!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_cappuccino',
     featured: true,
     tags: ['Capuccino', 'Café', 'Canela', 'Bebida Quente', 'Conforto'],
     ingredients: [
@@ -73,7 +73,7 @@ export const DRINK_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 170,
     beagleTip: 'Dica da Nika: use uma taça ou copo de vidro bem gelado mantido no freezer; isso mantém a bola de sorvete firme enquanto o café quente escorre por ela!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_coffee',
     tags: ['Affogato', 'Café', 'Sorvete', 'Itália', 'Rápido'],
     ingredients: [
       { item: 'Bola grande de sorvete de baunilha artesanal', amount: 1, unit: 'bola' },
@@ -129,7 +129,7 @@ export const DRINK_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 130,
     beagleTip: 'Dica da Nika: peneire o pó de matcha e use água a 75°C (nunca fervendo) batendo em zigue-zague com o batedor de bambu até formar uma espuma verde-esmeralda linda!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_cappuccino',
     tags: ['Matcha', 'Japão', 'Chá', 'Latte', 'Saudável'],
     ingredients: [
       { item: 'Matcha em pó puro de boa qualidade', amount: 1, unit: 'colher de chá' },
@@ -157,7 +157,7 @@ export const DRINK_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 60,
     beagleTip: 'Dica da Nika: deixe o chá preto esfriar antes de colocar os cubos de gelo para ele não ficar turvo; com raminhos de hortelã fresca é o melhor refresco da tarde!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_iced_coffee',
     tags: ['Chá Gelado', 'Pêssego', 'Hortelã', 'Verão', 'Refrescante'],
     ingredients: [
       { item: 'Sachês de chá preto ou infusão solta', amount: 3, unit: 'sachês' },

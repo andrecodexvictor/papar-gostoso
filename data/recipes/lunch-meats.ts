@@ -78,7 +78,7 @@ export const LUNCH_MEATS_RECIPES: Recipe[] = [
     servings: 2,
     caloriesApprox: 310,
     beagleTip: 'Dica da Nika: o limão, azeite e uma pitada de mostarda na marinada quebram as fibras do frango e mantêm todo o suco dentro durante a grelha!',
-    illustrationId: 'lunch_parmigiana',
+    illustrationId: 'pasta_chicken',
     tags: ['Frango', 'Grelhado', 'Leve', 'Fit', 'Rápido'],
     ingredients: [
       { item: 'Filés de peito de frango na espessura média', amount: 2, unit: 'filés', tag: 'frango' },
@@ -137,7 +137,7 @@ export const LUNCH_MEATS_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 190,
     beagleTip: 'Dica da Nika: asse os pedaços de abóbora com casca e azeite no forno antes de bater; ela carameliza e a sopa ganha um sabor tostado profundo!',
-    illustrationId: 'lunch_ribs',
+    illustrationId: 'france_onion_soup',
     tags: ['Sopa', 'Abóbora', 'Gengibre', 'Conforto', 'Inverno'],
     ingredients: [
       { item: 'Abóbora cabotiá picada', amount: 600, unit: 'g' },
@@ -254,7 +254,7 @@ export const LUNCH_MEATS_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 460,
     beagleTip: 'Dica da Nika: doure os cubos de frango até pegarem aquela cor de caramelo antes de adicionar os temperos úmidos!',
-    illustrationId: 'lunch_parmigiana',
+    illustrationId: 'pasta_chicken',
     tags: ['Estrogonofe', 'Frango', 'Almoço', 'Fácil'],
     ingredients: [
       { item: 'Peito de frango cortado em cubos', amount: 500, unit: 'g', tag: 'frango' },

@@ -14,7 +14,7 @@ export const BREAKFAST_RECIPES: Recipe[] = [
     servings: 2,
     caloriesApprox: 5,
     beagleTip: 'Dica de ouro da Nika: escalde o filtro de papel com água quente antes de pôr o pó para tirar o gosto de celulose, e nunca use água fervendo aos borbotões — espere 30 segundos após ferver!',
-    illustrationId: 'cafe_espresso',
+    illustrationId: 'drink_coffee',
     featured: true,
     tags: ['Café', 'Manhã', 'Bebida', 'Ritual', 'Coado'],
     ingredients: [
@@ -269,7 +269,7 @@ export const BREAKFAST_RECIPES: Recipe[] = [
     servings: 1,
     caloriesApprox: 240,
     beagleTip: 'Dica da Nika: bata bem o ovo com o garfo antes de colocar a tapioca; a crepioca fica macia como um crepe francês!',
-    illustrationId: 'breakfast_toast',
+    illustrationId: 'brasil_tapioca',
     tags: ['Crepioca', 'Rápido', 'Manhã', 'Tapioca', 'Ovo'],
     ingredients: [
       { item: 'Ovo inteiro', amount: 1, unit: 'unidade', tag: 'ovo' },

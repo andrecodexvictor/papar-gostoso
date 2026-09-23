@@ -78,7 +78,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 10,
     caloriesApprox: 420,
     beagleTip: 'Dica da Nika: misture leite com uma colher de vinagre de maçã e deixe talhar por 10 minutos para fazer buttermilk caseiro; é isso que dá a maciez aveludada do Red Velvet!',
-    illustrationId: 'dessert_sponge_cake',
+    illustrationId: 'dessert_red_velvet',
     tags: ['Red Velvet', 'Festa', 'Cream Cheese', 'Bolo'],
     ingredients: [
       { item: 'Farinha de trigo', amount: 2.5, unit: 'xícaras' },
@@ -198,7 +198,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 6,
     caloriesApprox: 240,
     beagleTip: 'Dica da Nika: use suco concentrado de maracujá puro sem água; bata por 4 minutos completos para incorporar bastante ar e a mousse ficar cheia de bolhinhas leves!',
-    illustrationId: 'dessert_sponge_cake',
+    illustrationId: 'dessert_mousse',
     tags: ['Mousse', 'Maracujá', 'Gelada', 'Sobremesa', 'Fácil'],
     ingredients: [
       { item: 'Leite condensado', amount: 1, unit: 'lata', tag: 'doce' },
@@ -225,7 +225,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 310,
     beagleTip: 'Dica da Nika: derreta chocolate meio amargo 60% e junte o creme de leite em temperatura ambiente; a textura fica densa e aveludada estilo restaurante francês!',
-    illustrationId: 'dessert_brownie',
+    illustrationId: 'dessert_mousse',
     tags: ['Mousse', 'Chocolate', 'Rápido', 'Sobremesa'],
     ingredients: [
       { item: 'Chocolate meio amargo picado', amount: 200, unit: 'g', tag: 'chocolate' },
@@ -253,7 +253,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 8,
     caloriesApprox: 180,
     beagleTip: 'Dica da Nika: prepare as gelatinas de sabores diferentes com metade da água recomendada na caixinha; os cubinhos ficam bem firmes e não derretem na hora de misturar o creme!',
-    illustrationId: 'salad_tropical',
+    illustrationId: 'dessert_jelly',
     tags: ['Gelatina', 'Mosaico', 'Sobremesa', 'Infância', 'Festa'],
     ingredients: [
       { item: 'Caixinhas de gelatina de sabores diferentes (morango, limão, uva, abacaxi)', amount: 4, unit: 'caixas' },
@@ -280,7 +280,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 220,
     beagleTip: 'Dica da Nika: rale as raspas da casca de limão com cuidado para não pegar a parte branca amarga; misture metade no creme e a outra metade use para salpicar no topo!',
-    illustrationId: 'dessert_lemon_pie',
+    illustrationId: 'dessert_mousse',
     tags: ['Mousse', 'Limão', 'Fácil', 'Sobremesa', 'Rápido'],
     ingredients: [
       { item: 'Leite condensado', amount: 1, unit: 'lata', tag: 'doce' },
@@ -307,7 +307,7 @@ export const DESSERT_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 90,
     beagleTip: 'Dica da Nika: adicione as fatias de morango quando a gelatina estiver quase começando a firmar na geladeira; assim as frutas ficam suspensas no meio do copo!',
-    illustrationId: 'salad_tropical',
+    illustrationId: 'dessert_jelly',
     tags: ['Gelatina', 'Morango', 'Leve', 'Frutas'],
     ingredients: [
       { item: 'Gelatina sabor morango', amount: 2, unit: 'caixas' },

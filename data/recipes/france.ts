@@ -14,7 +14,7 @@ export const FRANCE_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 180,
     beagleTip: 'Dica de ouro da Nika: use um fatiador ou faca bem amolada para cortar os legumes na mesma espessura e asse com papel manteiga cortado por cima (cartouche) para não ressecar!',
-    illustrationId: 'france_croissant',
+    illustrationId: 'france_ratatouille',
     featured: true,
     tags: ['Ratatouille', 'França', 'Legumes', 'Bistrô', 'Forno'],
     ingredients: [
@@ -45,7 +45,7 @@ export const FRANCE_RECIPES: Recipe[] = [
     servings: 6,
     caloriesApprox: 450,
     beagleTip: 'Dica da Nika: pré-asse a massa da torta (blind baking) com grãos de feijão por cima antes de colocar o recheio líquido; isso garante um fundo crocante e seco!',
-    illustrationId: 'france_croissant',
+    illustrationId: 'france_quiche',
     tags: ['Quiche', 'Bacon', 'França', 'Forno', 'Bistrô'],
     ingredients: [
       { item: 'Farinha de trigo e manteiga gelada para a massa brisée', amount: 200, unit: 'g' },
@@ -134,7 +134,7 @@ export const FRANCE_RECIPES: Recipe[] = [
     servings: 3,
     caloriesApprox: 340,
     beagleTip: 'Dica da Nika: não tenha pressa ao refogar as cebolas na manteiga; leva 30 minutos em fogo brando para que elas caramelizem no próprio açúcar natural!',
-    illustrationId: 'lunch_ribs',
+    illustrationId: 'france_onion_soup',
     tags: ['Sopa', 'Cebola', 'França', 'Queijo', 'Inverno'],
     ingredients: [
       { item: 'Cebolas cortadas em meias-luas finas', amount: 4, unit: 'unidades' },

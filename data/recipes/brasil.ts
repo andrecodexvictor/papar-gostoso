@@ -348,7 +348,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 460,
     beagleTip: 'Dica da Nika: bata a mandioca cozida com o leite de coco e o próprio caldo das cascas do camarão fervidas; o sabor fica irresistível!',
-    illustrationId: 'japan_poke',
+    illustrationId: 'brasil_moqueca',
     tags: ['Bobó', 'Camarão', 'Bahia', 'Brasil', 'Mandioca'],
     ingredients: [
       { item: 'Camarões limpos médios', amount: 500, unit: 'g' },
@@ -464,7 +464,7 @@ export const BRASIL_RECIPES: Recipe[] = [
     servings: 4,
     caloriesApprox: 290,
     beagleTip: 'Dica da Nika: junte a couve fatiada bem fininha somente após desligar o fogo; o calor residual do caldo cozinha a couve deixando-a verde viva e crocante!',
-    illustrationId: 'salad_potato',
+    illustrationId: 'france_onion_soup',
     tags: ['Caldo Verde', 'Sopa', 'Inverno', 'Paio', 'Brasil'],
     ingredients: [
       { item: 'Batatas descascadas e cozidas', amount: 600, unit: 'g' },

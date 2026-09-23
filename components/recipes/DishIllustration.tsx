@@ -6,6 +6,9 @@ import {
   BrasilPaoDeQueijoIllustration,
   BrasilBrigadeiroIllustration,
   BrasilBoloCenouraIllustration,
+  BrasilMoquecaIllustration,
+  BrasilPastelIllustration,
+  BrasilTapiocaIllustration,
 } from './illustrations/BrasilDishes';
 import {
   BurgerClassicIllustration,
@@ -18,7 +21,17 @@ import {
   ItalyPizzaIllustration,
   PastaLasagnaIllustration,
   ItalyRisottoIllustration,
+  PastaWhiteSauceIllustration,
+  PastaChickenIllustration,
+  PastaPestoIllustration,
+  ItalyBruschettaIllustration,
 } from './illustrations/PastasAndItaly';
+import {
+  FranceRatatouilleIllustration,
+  FranceQuicheIllustration,
+  FranceCroissantIllustration,
+  FranceOnionSoupIllustration,
+} from './illustrations/FranceDishes';
 import {
   LunchSteakIllustration,
   BreakfastEggsIllustration,
@@ -28,13 +41,25 @@ import {
   DessertPuddingIllustration,
   DessertBrownieIllustration,
   DessertCookieIllustration,
+  DessertRedVelvetIllustration,
+  DessertSpongeCakeIllustration,
+  DessertLemonPieIllustration,
+  DessertMousseIllustration,
+  DessertJellyIllustration,
 } from './illustrations/DessertsAndBakery';
 import {
   JapanRamenIllustration,
   JapanMochiIllustration,
   JapanPokeIllustration,
+  JapanGyozaIllustration,
+  JapanKaraageIllustration,
   DrinkCoffeeIllustration,
+  DrinkIcedCoffeeIllustration,
+  DrinkCappuccinoIllustration,
   SaladCaesarIllustration,
+  SaladGreekIllustration,
+  SaladPotatoIllustration,
+  SaladTropicalIllustration,
 } from './illustrations/JapanSaladsDrinks';
 import { DishType } from '@/types/recipe';
 
@@ -76,10 +101,22 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
       case 'brasil_bolo_cenoura':
         return <BrasilBoloCenouraIllustration />;
       case 'brasil_moqueca':
-        return <BrasilFeijoadaIllustration />;
+        return <BrasilMoquecaIllustration />;
       case 'brasil_pastel':
+        return <BrasilPastelIllustration />;
       case 'brasil_tapioca':
-        return <BrasilCuscuzIllustration />;
+        return <BrasilTapiocaIllustration />;
+
+      // FRANCE
+      case 'france_ratatouille':
+        return <FranceRatatouilleIllustration />;
+      case 'france_quiche':
+        return <FranceQuicheIllustration />;
+      case 'france_croissant':
+      case 'dessert_croissant':
+        return <FranceCroissantIllustration />;
+      case 'france_onion_soup':
+        return <FranceOnionSoupIllustration />;
 
       // BURGERS & BREADS
       case 'burger_classic':
@@ -87,7 +124,6 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
       case 'burger_meat':
         return <BurgerClassicIllustration />;
       case 'burger_chicken':
-      case 'japan_karaage':
         return <BurgerChickenIllustration />;
       case 'burger_japanese':
       case 'japan_hambagu':
@@ -98,14 +134,21 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
 
       // PASTAS & ITALY
       case 'pasta_carbonara':
-      case 'pasta_white_sauce':
-      case 'pasta_chicken':
-      case 'italy_pesto':
+      case 'pasta_garlic_oil':
         return <PastaCarbonaraIllustration />;
+      case 'pasta_white_sauce':
+        return <PastaWhiteSauceIllustration />;
+      case 'pasta_chicken':
+        return <PastaChickenIllustration />;
+      case 'pasta_pesto':
+      case 'italy_pesto':
+        return <PastaPestoIllustration />;
       case 'italy_pizza':
-      case 'italy_bruschetta':
         return <ItalyPizzaIllustration />;
+      case 'italy_bruschetta':
+        return <ItalyBruschettaIllustration />;
       case 'pasta_lasagna':
+      case 'pasta_gnocchi':
       case 'italy_parmigiana':
       case 'lunch_parmigiana':
         return <PastaLasagnaIllustration />;
@@ -123,46 +166,61 @@ export const DishIllustration: React.FC<DishIllustrationProps> = ({
       case 'breakfast_toast':
         return <BreadRusticIllustration />;
       case 'breakfast_pancake':
-      case 'dessert_sponge_cake':
-      case 'dessert_red_velvet':
+      case 'france_crepe':
         return <BreakfastPancakeIllustration />;
 
       // DESSERTS & SWEETS
       case 'dessert_pudding':
-      case 'dessert_mousse':
-      case 'dessert_jelly':
         return <DessertPuddingIllustration />;
       case 'dessert_brownie':
         return <DessertBrownieIllustration />;
       case 'dessert_cookie':
-      case 'dessert_lemon_tart':
-      case 'dessert_croissant':
+      case 'dessert_cookies':
         return <DessertCookieIllustration />;
+      case 'dessert_red_velvet':
+        return <DessertRedVelvetIllustration />;
+      case 'dessert_sponge_cake':
+        return <DessertSpongeCakeIllustration />;
+      case 'dessert_lemon_tart':
+      case 'dessert_lemon_pie':
+        return <DessertLemonPieIllustration />;
+      case 'dessert_mousse':
+        return <DessertMousseIllustration />;
+      case 'dessert_jelly':
+        return <DessertJellyIllustration />;
 
       // JAPAN
       case 'japan_ramen':
-      case 'japan_gyoza':
         return <JapanRamenIllustration />;
       case 'japan_mochi':
         return <JapanMochiIllustration />;
       case 'japan_poke':
       case 'japan_onigiri':
         return <JapanPokeIllustration />;
+      case 'japan_gyoza':
+        return <JapanGyozaIllustration />;
+      case 'japan_karaage':
+        return <JapanKaraageIllustration />;
 
       // DRINKS & COFFEE
       case 'drink_coffee':
-      case 'drink_iced_coffee':
-      case 'drink_cappuccino':
       case 'drink_hot_chocolate':
       case 'drink_matcha':
         return <DrinkCoffeeIllustration />;
+      case 'drink_iced_coffee':
+        return <DrinkIcedCoffeeIllustration />;
+      case 'drink_cappuccino':
+        return <DrinkCappuccinoIllustration />;
 
       // SALADS
       case 'salad_caesar':
-      case 'salad_greek':
-      case 'salad_tropical':
-      case 'salad_potato':
         return <SaladCaesarIllustration />;
+      case 'salad_greek':
+        return <SaladGreekIllustration />;
+      case 'salad_tropical':
+        return <SaladTropicalIllustration />;
+      case 'salad_potato':
+        return <SaladPotatoIllustration />;
 
       // FALLBACK BASED ON TYPE
       default:
